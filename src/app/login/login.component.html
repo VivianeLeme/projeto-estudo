@@ -1,0 +1,21 @@
+<div class="container form-login">
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+
+    <h1 class="title">Sign In</h1>
+    <p>Need an Acounnt?</p>
+
+    <div class="mb-3">
+      <input type="email" placeholder="Email" formControlName="email" class="form-control" id="email">
+
+    </div>
+
+    <div class="mb-3">
+      <input type="password" placeholder="Password" formControlName="password" class="form-control" id="senha">
+    </div>
+
+    <button [disabled]="!form.valid" type="submit" class="btn btn-success">Sign In</button>
+  </form>
+
+
+
+</div>
